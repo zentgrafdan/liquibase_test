@@ -4,4 +4,5 @@
 	<include file="demodb_changelog1.xml"/>
 	<include file="demodb_changelog2.xml"/>
 	<include file="demodb_changelog3.xml"/>
+	<include file="demodb_changelog4.xml"/>
 </databaseChangeLog>
