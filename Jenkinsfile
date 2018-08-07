@@ -18,6 +18,17 @@ pipeline {
         bat 'C:\\Tools\\datical_prj\\demobats\\test2.bat'
       }
     }
+    stage('Good to Prod') {
+      steps {
+        input(message: 'OK to promote to Prod', id: '1', ok: 'OK')
+      }
+    }
+    stage('Prod') {
+      steps {
+        bat 'C:\\Tools\\datical_prj\\demobats\\prod1.bat'
+        bat 'C:\\Tools\\datical_prj\\demobats\\prod2.bat'
+      }
+    }
   }
   environment {
     Dev = 'dev'
