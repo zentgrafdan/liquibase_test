@@ -9,7 +9,7 @@
             <column name="foo_fourthtable" type="VARCHAR(50)"/>
         </createTable>
     <rollback>
-        <dropTable tableName="table_4">
+        <dropTable tableName="table_4"/>
     </rollback>
     </changeSet>
 </databaseChangeLog>
